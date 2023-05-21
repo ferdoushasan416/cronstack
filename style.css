@@ -14,6 +14,7 @@
   --black: #000000;
   --theme-bg: #A5A5A5;;
   --text-white: #fff;
+  --body-bg-color: #181820;
 }
 
 /*
@@ -155,12 +156,75 @@ li {
   overflow: hidden;
 }
 
-.container-fluid {
-  max-width: 1400px; 
+.vector-shade {
+  position: relative;
+}
+
+.container-large {
+  max-width: 1400px;
 }
 
 .container {
 	max-width: 1240px;
+}
+
+.vector-shade::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-image: url(assets/images/Vector.png);
+	background-repeat: no-repeat;
+	left: 0;
+	bottom: -70px;
+}
+
+.shade-2::after {
+  background-image: url(assets/images/Vector-2.png);
+  bottom: -55px;
+}
+
+.sub-title {
+  font-size: 16px;
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+.section-title h2 {
+  color: var(--text-white);
+  font-size: 47px;
+  margin-bottom: 40px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
 }
 
 /*
@@ -207,16 +271,91 @@ Header Section Start
 .login-btn:hover {
   border: 1px solid transparent;
 }
+
+.header-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-toggle {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.nav-toggle::before,
+.nav-toggle::after,
+.nav-toggle span{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+}
+
+.nav-toggle::before,
+.nav-toggle::after {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.nav-toggle::after {
+  top: auto;
+  bottom: 2px;
+}
+
+.nav-toggle span{
+  margin: 6px 0;
+}
+
+.expanded .nav-toggle::before,
+.expanded .nav-toggle::after {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  -ms-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.expanded .nav-toggle::after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.expanded .nav-toggle span {
+  display: none;
+}
+
+.header-inner .btn-wrap .site-btn + .site-btn{
+  margin-left: 1.5rem;
+}
+
 /*
 ============================
 Header Section End
 ============================
 */
 
+
+/*
+============================
+Banner Section Start
+============================
+*/
+
 .banner-bg {
 	background: radial-gradient(55.35% 55.35% at 50% 50%, rgba(108, 94, 139, 0.8) 0%, rgba(54, 30, 81, 0) 100%);
 	position: relative;
-	padding-top: 300px;
+	padding-top: 120px;
+  padding-bottom: 50px;
 }
 
 .banner-bg:before {
@@ -231,17 +370,12 @@ Header Section End
   z-index: -9;
 }
 
-.banner-text {
-  position: relative;
-}
-
 .banner-text h1 {
   color: var(--text-white);
   font-size: 59px;
   line-height: 63px;
   font-weight: 700;
   margin-bottom: 50px;
-  position: relative;
 }
 
 .banner-text p {
@@ -261,18 +395,246 @@ Header Section End
   background: var(--primary);
 }
 
-.section-title h1::after {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	content: "";
-	background-image: url(assets/images/Vector.png);
-	background-repeat: no-repeat;
-	margin-left: -25%;
-	top: 100%;
-}
 /*
 ============================
-Header Section End
+Banner Section End
 ============================
 */
+
+
+
+/*
+============================
+Features Section Start
+============================
+*/
+
+.features-icon {
+  margin-bottom: 22px;
+}
+
+.features-box h3 {
+  color: var(--text-white);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.features-box p {
+  color: var(--secondary);
+  line-height: 24px;
+}
+
+.features-box {
+	background: linear-gradient(180deg, rgba(54, 52, 65, 0.5) 0%, rgba(42, 41, 55, 0.5) 100%);
+	border-radius: 10px;
+	padding: 35px 28px 35px;
+	margin-bottom: 25px;
+  transition: 0.3s all ease;
+}
+
+.features-box:hover {
+  background: linear-gradient(154.06deg, rgba(83, 68, 103, 0.5) 5.56%, rgba(42, 41, 55, 0.5) 82.89%);
+}
+
+/*
+============================
+Features Section End
+============================
+*/
+
+/*
+============================
+About Section Start
+============================
+*/
+
+.about-text h3 {
+  font-size: 40px;
+  color: var(--text-white);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: var(--secondary);
+  line-height: 27px;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+/*
+============================
+About Section Ends
+============================
+*/
+
+/*
+============================
+Pricing Section Section
+============================
+*/
+.pricing-box {
+  background: rgba(59, 55, 78, 0.5);
+  border-radius: 23.0857px;
+  padding: 32px 35px;
+  transition: 0.3s all ease;
+  border: 1px solid transparent;
+}
+
+.pricing-head h3 {
+  color: var(--text-white);
+}
+
+.pricing-head p {
+  font-size: 18px;
+  color: #DFE1F4;
+}
+
+.check {
+  width: 22px;
+  height: 22px;
+}
+
+.pricing-number {
+  display: flex;
+  gap: 10px;
+}
+
+.pricing-number p {
+  margin-top: 8px;
+}
+
+.pricing-list li {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 25px;
+  border-top: 1.15429px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pricing-bottom {
+  margin-top: 50px;
+}
+
+.pricing-bottom p {
+  font-size: 16px;
+}
+
+.pricing-bottom p a {
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.pricing-bottom .site-btn {
+  border: 1px solid var(--primary);
+  background: transparent;
+}
+
+.pricing-box:hover {
+  background: rgba(94, 80, 110, 0.8);
+  border: 1px solid var(--primary);
+}
+
+.pricing-box:hover .site-btn {
+  color: var(--text-white);
+  background: var(--primary);
+}
+
+/*
+============================
+Pricing Section Section
+============================
+*/
+
+/*
+============================
+Trial Section Start
+============================
+*/
+
+.trial-bg {
+  position: relative;
+  background: var(--primary);
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-image: url(assets/images/trail-transparent.png);
+  border-radius: 30px;
+}
+
+.free-trial-arae .sub-title {
+  color: var(--text-white);
+}
+
+.bg-white {
+	color: var(--primary);
+}
+
+
+/*
+============================
+Trial Section End
+============================
+*/
+
+/*
+============================
+Footer Section Start
+============================
+*/
+
+.footer-wrapper {
+	background: #2D2D3C;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	margin-top: -45px;
+}
+
+/*
+============================
+Footer Section End
+============================
+*/
+
+
+/* 
+=============================
+    Responsive styles
+=============================
+*/
+@media (max-width: 767px) {
+.header-section.expanded{
+   background-color: var(--body-bg-color);
+}
+.header-inner,
+.header-inner .btn-wrap{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.header-inner .btn-wrap{
+   width: 100%;
+   padding: 24px;
+   position: absolute;
+   left: 0;
+   top: 100px;
+   box-sizing: border-box;
+   z-index: 9;
+   background-color: var(--body-bg-color);
+   display: none;
+}
+
+.header-inner .btn-wrap .site-btn{
+   width: 100%;
+}
+
+.header-inner .btn-wrap .site-btn + .site-btn{
+   margin-left: 0;
+   margin-top: 2.3rem;
+}
+
+}

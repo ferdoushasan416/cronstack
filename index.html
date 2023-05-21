@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronstack-Home</title>
+
+    <!-- Favicon icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="icon" href="assets/images/favicon.ico">
+
     <!------ CSS here ----->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -16,25 +22,24 @@
      <div id="page">
   <!------- Html Start ------------>
 
-<!----- Header-Start-------->
-  <header class="transparent-header">
-      <div class="main-header">
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="logo">
-                          <a href="index.html"><img src="assets/images/logo.png"></a>
-                      </div>
-                  </div>
-                  <div class="col-md-6 text-right">
-                      <div class="header-cta">
-                          <a href="#" class="site-btn">Sign Up</a>
-                          <a href="#" class="site-btn login-btn">Login</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+  <!-- Header section start -->
+  <header id="header-section" class="header-section container container-large">
+      <div class="d-flex align-items-center justify-content-between header-inner">
+           <a class="site-logo" href="https://www.cronstack.io/">
+               <img src="assets/images/logo.png" alt="Logo of Cronstack website">
+          </a>
+         <button class="nav-toggle d-md-none" id="nav-toggle">
+             <span></span>
+        </button>
+        <div id="btn-wrap" class="btn-wrap d-md-flex align-items-center">
+            <a class="site-btn" href="https://app.cronstack.io/#/sign-up">
+                 sign up
+            </a>
+            <a class="site-btn login-btn" href="https://app.cronstack.io/#/">
+                 Login
+           </a>
+       </div>
+    </div>
   </header>
 <!-----Header-End---------->
 
@@ -46,25 +51,310 @@
              <div class="row">
                  <div class="col-12 text-center">
                      <div class="banner-text section-title">
-                         <h1>Cloud Automation Simplified</h1>            
+                         <h1>Cloud Automation <span class="vector-shade">Simplified</span></h1>            
                          <p>Introducing Cronstack, a serverless task scheduler for automating your cloud 
                          infrastructure. Reduce cost, optimize<br/> workloads, perform backups, and more through scheduled actions.</p>
                          <a href="#" class="site-btn banner-btn">Pricing And Plans</a>
                     </div>
                  </div>
              </div>
-             <div class="row">
-                 <div class="col-12">
-                      <div class="site-img">
-                          <img src="assets/images/dashbord-img.png">
-                      </div>
-                 </div>
+             <div class="site-img mt-30">
+                <img src="assets/images/dashbord-img.png">
              </div>
-         </div>
+                 <div class="row text-center mt-40">
+                      <div class="col-md-4">
+                           <div class="brand-logo">
+                                <img src="assets/images/oci.png">
+                           </div>
+                      </div>
+                    <div class="col-md-4">
+                         <div class="brand-logo">
+                              <img src="assets/images/azure.png">
+                         </div>
+                    </div>
+                        <div class="col-md-4">
+                              <div class="brand-logo">
+                                   <img src="assets/images/aws.png">
+                             </div>
+                       </div>
+                  </div>
+           </div>
      </div>
 </section>
 <!-- Banner Section Ends -->
+
+<!-- Product Features Section Start -->
+<section class="product-features-area pt-100 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="section-title mb-80">
+                    <span class="sub-title">Product Feature</span>
+                    <h2>Explore our amazing <span class="vector-shade shade-2">features</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="features-icon">
+                        <img src="assets/images/features-icon-1.png">
+                    </div>
+                    <h3>Reduce Costs</h3>
+                    <p>Schedule your cloud infrastructure to run on your time. Reduce your workloads when they're not used.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="features-icon">
+                        <img src="assets/images/features-icon-2.png">
+                    </div>
+                    <h3>Reduce Costs</h3>
+                    <p>Schedule your cloud infrastructure to run on your time. Reduce your workloads when they're not used.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="features-icon">
+                        <img src="assets/images/features-icon-3.png">
+                    </div>
+                    <h3>Reduce Costs</h3>
+                    <p>Schedule your cloud infrastructure to run on your time. Reduce your workloads when they're not used.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="features-icon">
+                        <img src="assets/images/features-icon-4.png">
+                    </div>
+                    <h3>Reduce Costs</h3>
+                    <p>Schedule your cloud infrastructure to run on your time. Reduce your workloads when they're not used.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="features-icon">
+                        <img src="assets/images/features-icon-5.png">
+                    </div>
+                    <h3>Reduce Costs</h3>
+                    <p>Schedule your cloud infrastructure to run on your time. Reduce your workloads when they're not used.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product Features Section End -->
+
+<!-- Own workflow Section Start -->
+<section class="own-wirkflow-arae">
+    <div class="container">
+        <div class="row">
+             <div class="col-12 text-center">
+                <div class="section-title mb-80">
+                    <span class="sub-title">Product Feature</span>
+                    <h2>Build your own <span class="vector-shade shade-2">Workflow</span></h2>
+                    <p>With minimal effort, you can have your cloud infrastructure automated in no time!</p>
+                </div>
+             </div>
+        </div>
+        <div class="about-wrap">
+            <div class="row mb-120">
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-text mb-30">
+                        <h3>Create Actions</h3>
+                        <p>Chose from a list of actions to automate your cloud infrastructure from image backups, disaster
+                         recovery, starting/stopping services, patch management, and more.</p>
+                         <a href="#" class="site-btn">Try Cronstack</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 text-right">
+                    <div class="about-right">
+                        <img src="assets/images/about-image-1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-120">
+                <div class="col-lg-8 col-md-6 text-left">
+                    <div class="about-left">
+                        <img src="assets/images/about-image-2.png">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-text mb-30">
+                        <h3>Create Actions</h3>
+                        <p>Chose from a list of actions to automate your cloud infrastructure from image backups, disaster
+                         recovery, starting/stopping services, patch management, and more.</p>
+                         <a href="#" class="site-btn">Try Cronstack</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-120">
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-text mb-30">
+                        <h3>Create Actions</h3>
+                        <p>Chose from a list of actions to automate your cloud infrastructure from image backups, disaster
+                         recovery, starting/stopping services, patch management, and more.</p>
+                         <a href="#" class="site-btn">Try Cronstack</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 text-right">
+                    <div class="about-right">
+                        <img src="assets/images/about-image-3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Own workflow Section End -->
+
+<!-- Product Pricing Section Start -->
+<section class="product-pricing-area pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-5">
+                <div class="pricing-box">
+                    <div class="pricing-head mb-30">
+                        <h3 class="mb-30">Pro</h3>
+                       <div class="pricing-number">
+                            <h3>$0.10 </h3>
+                            <p>per cent</p>
+                       </div>
+                       <p>per invocation</p>
+                    </div>
+                        <ul class="pricing-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                If < 5,000 invocations/month
+                              </li>
+                              <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Unlimited Actions
+                              </li>
+                              <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Unlimited Support
+                              </li>
+                              <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                Access to new features
+                              </li>
+                              <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                And many more!
+                              </li>
+                        </ul>
+                     <div class="pricing-bottom">
+                          <p>Startup program available, <a href="#">see if you’re eligible</a></p>
+                          <a href="#" class="site-btn">Start Free Trial</a>
+                     </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="pricing-box">
+                    <div class="pricing-head mb-30">
+                        <h3 class="mb-30">Pro</h3>
+                       <div class="pricing-number">
+                            <h3>$0.10 </h3>
+                            <p>per cent</p>
+                       </div>
+                       <p>per invocation</p>
+                    </div>
+                        <ul class="pricing-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                If < 5,000 invocations/month
+                              </li>
+                              <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                If < 5,000 invocations/month
+                              </li>
+                              <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                If < 5,000 invocations/month
+                              </li>
+                              <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                If < 5,000 invocations/month
+                              </li>
+                              <li>
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="check">
+                                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                </svg>
+                                If < 5,000 invocations/month
+                              </li>
+                         </ul>
+                      <div class="pricing-bottom">
+                          <p>Startup program available, <a href="#">see if you’re eligible</a></p>
+                          <a href="#" class="site-btn">Start Free Trial</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product Pricing Section End -->
+
+<!-- Free Trial Section Start -->
+<section class="free-trial-arae pt-100 pb-100">
+    <div class="container trial-bg">
+        <div class="row">
+             <div class="col-12 text-center">
+                 <div class="section-title">
+                       <span class="sub-title">START YOUR FREE TRIAL</span>
+                       <h2>Find out what Cronstack can do for<br/> your cloud infrastructure.</h2>
+                       <a href="#" class="site-btn bg-white">Get started now</a>
+                 </div>
+             </div>
+        </div>
+    </div>
+</section>
+<!-- Free Trial Section End -->
 </main>
+
+<!-- Footer Section Start -->
+<section class="footer-wrapper">
+    <div class="container d-flex align-items-center justify-content-between">
+        <div class="footer-widget">
+            <div class="fotter-logo">
+                <a href="index.html"><img src="assets/images/logo.png"></a>
+            </div>
+        </div>
+            <div class="footer-widget">
+                <div class="copyright-tex">
+                    <p>All Right Reserved @ 2023 Cronstack.io</p> 
+                </div>
+            </div>
+            <div class="footer-widget">
+                <div class="social-links">
+                    <a href="#"><img src="assets/images/Spotify.png"></a>
+                    <a href="#"><img src="assets/images/Instagram.png"></a>
+                    <a href="#"><img src="assets/images/youtube.png"></a>
+                </div>
+          </div>
+    </div>
+</section>
+<!-- Footer Section End -->
 
 
 
