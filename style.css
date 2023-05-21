@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+  font-family: 'TT Firs Neue Trial';
+  src: url('assets/fonts/TT Firs Neue Trial Bold.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --primary: #FFA620;
+  --secondery: #9997AA;
+  --black: #000000;
+  --theme-bg: #A5A5A5;;
+  --text-white: #fff;
+}
+
+/*
+===============================
+Global CSS START
+===============================
+*/
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background: #181820;
+  color: var(--text-white);
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-out 0s;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'TT Firs Neue Trial', sans-serif;
+  font-weight: normal;
+  color: var(--black);
+  margin-top: 0px;
+  margin: 0 0 15px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none
+}
+
+/*----- button style ------*/
+
+.site-btn {
+  background: var(--primary);
+  color: var(--text-white);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 18px 38px;
+  text-align: center;
+  border: 0;
+  transition: 0.3s all ease;
+  border-radius: 12px;
+}
+
+.site-btn:hover {
+  color: var(--black);
+  background: var(--text-white);
+}
+
+#page {
+  overflow: hidden;
+}
+
+.container-fluid {
+  max-width: 1400px; 
+}
+
+.container {
+	max-width: 1240px;
+}
+
+/*
+============================
+Global CSS END
+============================
+*/
+
+
+/*
+============================
+Header Section Start
+============================
+*/
+
+.transparent-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.main-header {
+	padding: 40px 0;
+}
+
+.header-cta a {
+	margin-left: 20px;
+}
+
+.header-cta a {
+  margin-left: 20px;
+}
+
+.login-btn {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: none;
+  transition: 0.3s all ease;
+}
+
+.login-btn:hover {
+  border: 1px solid transparent;
+}
+/*
+============================
+Header Section End
+============================
+*/
+
+.banner-bg {
+	background: radial-gradient(55.35% 55.35% at 50% 50%, rgba(108, 94, 139, 0.8) 0%, rgba(54, 30, 81, 0) 100%);
+	position: relative;
+	padding-top: 300px;
+}
+
+.banner-bg:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url(assets/images/banner-shade.png);
+  background-size: cover;
+  z-index: -9;
+}
+
+.banner-text {
+  position: relative;
+}
+
+.banner-text h1 {
+  color: var(--text-white);
+  font-size: 59px;
+  line-height: 63px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.banner-text p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.site-btn.banner-btn {
+  background: var(--text-white);
+  color: var(--black);
+  font-size: 18px;
+}
+
+.banner-btn:hover {
+  color: var(--text-white);
+  background: var(--primary);
+}
+
+.section-title h1::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-image: url(assets/images/Vector.png);
+	background-repeat: no-repeat;
+	margin-left: -25%;
+	top: 100%;
+}
+/*
+============================
+Header Section End
+============================
+*/
