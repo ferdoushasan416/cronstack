@@ -556,6 +556,7 @@ Features Section Start
   width: 100%;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .features-box::before,
