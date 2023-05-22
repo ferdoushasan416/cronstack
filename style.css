@@ -1,59 +1,65 @@
-:root{
-  --primary: #FFA620;
-  --secondery: #9997AA;
+:root {
+  --primary: #ffa620;
+  --secondery: #361e51;
   --black: #000000;
-  --theme-bg: #A5A5A5;;
   --text-white: #fff;
+  --text-light-gray: #dfe1f4;
+  --btn-color: #f0f9f5;
   --body-bg-color: #181820;
+  --body-text-color: #9997aa;
+  --social-link-bg-color: #8976fd;
+  --footer-bg-color: #2d2d3c;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 @font-face {
-  font-family: 'TT Firs Neue Trl';
-  src: url('assets/fonts/TTFirsNeueTrl-Regular.eot');
-  src: url('assets/fonts/TTFirsNeueTrl-Regular.eot?#iefix') format('embedded-opentype'),
-      url('assets/fonts/TTFirsNeueTrl-Regular.woff2') format('woff2'),
-      url('assets/fonts/TTFirsNeueTrl-Regular.woff') format('woff');
+  font-family: "TT Firs Neue Trl";
+  src: url("assets/fonts/TTFirsNeueTrl-Regular.eot");
+  src: url("assets/fonts/TTFirsNeueTrl-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/TTFirsNeueTrl-Regular.woff2") format("woff2"),
+    url("assets/fonts/TTFirsNeueTrl-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-
 @font-face {
-  font-family: 'TT Firs Neue Trl';
-  src: url('assets/fonts/TTFirsNeueTrl-Medium.eot');
-  src: url('assets/fonts/TTFirsNeueTrl-Medium.eot?#iefix') format('embedded-opentype'),
-      url('assets/fonts/TTFirsNeueTrl-Medium.woff2') format('woff2'),
-      url('assets/fonts/TTFirsNeueTrl-Medium.woff') format('woff');
+  font-family: "TT Firs Neue Trl";
+  src: url("assets/fonts/TTFirsNeueTrl-Medium.eot");
+  src: url("assets/fonts/TTFirsNeueTrl-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/TTFirsNeueTrl-Medium.woff2") format("woff2"),
+    url("assets/fonts/TTFirsNeueTrl-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'TT Firs Neue Trl';
-  src: url('assets/fonts/TTFirsNeueTrl-DemiBold.eot');
-  src: url('assets/fonts/TTFirsNeueTrl-DemiBold.eot?#iefix') format('embedded-opentype'),
-      url('assets/fonts/TTFirsNeueTrl-DemiBold.woff2') format('woff2'),
-      url('assets/fonts/TTFirsNeueTrl-DemiBold.woff') format('woff');
+  font-family: "TT Firs Neue Trl";
+  src: url("assets/fonts/TTFirsNeueTrl-DemiBold.eot");
+  src: url("assets/fonts/TTFirsNeueTrl-DemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/TTFirsNeueTrl-DemiBold.woff2") format("woff2"),
+    url("assets/fonts/TTFirsNeueTrl-DemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'TT Firs Neue Trl';
-  src: url('assets/fonts/TTFirsNeueTrl-Bold.eot');
-  src: url('assets/fonts/TTFirsNeueTrl-Bold.eot?#iefix') format('embedded-opentype'),
-      url('assets/fonts/TTFirsNeueTrl-Bold.woff2') format('woff2'),
-      url('assets/fonts/TTFirsNeueTrl-Bold.woff') format('woff');
+  font-family: "TT Firs Neue Trl";
+  src: url("assets/fonts/TTFirsNeueTrl-Bold.eot");
+  src: url("assets/fonts/TTFirsNeueTrl-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/TTFirsNeueTrl-Bold.woff2") format("woff2"),
+    url("assets/fonts/TTFirsNeueTrl-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
-
 
 /*
 ===============================
@@ -62,7 +68,7 @@ Global CSS START
 */
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -77,6 +83,10 @@ body {
   height: 100%;
   min-width: 320px;
 }
+/* 
+body{
+  overflow-x: hidden;
+} */
 
 img {
   max-width: 100%;
@@ -114,59 +124,59 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'TT Firs Neue Trial', sans-serif;
+  font-family: "TT Firs Neue Trl", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-weight: 500;
   text-transform: normal;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 h1,
-h2{
+h2 {
   font-weight: bold;
 }
 
 h4,
-h5{
+h5 {
   font-weight: 600;
 }
 
-h1{
+h1 {
   font-size: 2.8125rem; /* 45px */
 }
-h2{
+h2 {
   font-size: 2.1875rem; /* 35px */
 }
-h3{
+h3 {
   font-size: 1.875rem; /* 30px */
 }
 
-h4{
+h4 {
   font-size: 1.5rem; /* 24px */
 }
 
-h5{
+h5 {
   font-size: 1.25rem; /* 20px */
 }
 
 @media screen and (min-width: 1360px) {
-  h1{
-    font-size: 3.6875rem;
+  h1 {
+    font-size: 3.6875rem; /* 59px */
   }
-  h2{
-    font-size: 2.9375rem;
+  h2 {
+    font-size: 2.9375rem; /* 47px */
   }
-  h3{
-    font-size: 2.5rem;
-  }
-
-  h4{
-    font-size: 1.875rem;
+  h3 {
+    font-size: 2.5rem; /* 40px */
   }
 
-  h5{
-    font-size: 1.5625rem;
+  h4 {
+    font-size: 1.875rem; /* 30px */
+  }
+
+  h5 {
+    font-size: 1.5625rem; /* 25px */
   }
 }
 
@@ -182,19 +192,19 @@ h6 a {
 ul {
   margin: 0px;
   padding: 0px;
-  list-style: none
+  list-style: none;
 }
-
 
 /*----- button style ------*/
 
 .site-btn {
   background: var(--primary);
-  color: var(--text-white);
+  color: var(--btn-color);
   cursor: pointer;
   display: inline-block;
   font-size: 17px;
-  font-weight: 600;
+  font-family: "TT Firs Neue Trl", sans-serif;
+  font-weight: bold;
   line-height: 1;
   margin-bottom: 0;
   padding: 18px 38px;
@@ -205,7 +215,7 @@ ul {
 }
 
 .site-btn:hover {
-  color: var(--black);
+  color: var(--secondary);
   background: var(--text-white);
 }
 
@@ -217,28 +227,20 @@ ul {
   position: relative;
 }
 
-.container-large {
-  max-width: 1400px;
-}
-
-.container {
-	max-width: 1240px;
-}
-
 .vector-shade::after {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	content: "";
-	background-image: url(assets/images/Vector.png);
-	background-repeat: no-repeat;
-	left: 0;
-	bottom: -70px;
+  position: absolute;
+  width: 100%;
+  height: 116%;
+  content: "";
+  background-image: url(assets/images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  left: 0;
+  top: 0;
 }
 
 .shade-2::after {
-  background-image: url(assets/images/Vector-2.png);
-  bottom: -55px;
+  background-image: url(assets/images/title-vector.svg);
 }
 
 .sub-title {
@@ -250,38 +252,16 @@ ul {
   display: block;
   margin-bottom: 20px;
 }
+
+.section-title,
+.copyright-text {
+  font-family: "TT Firs Neue Trl", sans-serif;
+}
+
 .section-title h2 {
   color: var(--text-white);
   font-size: 47px;
-  margin-bottom: 40px;
-}
-
-.mt-30 {
-  margin-top: 30px;
-}
-
-.mt-40 {
-  margin-top: 40px;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-
-.mb-80 {
-  margin-bottom: 80px;
-}
-
-.mb-120 {
-  margin-bottom: 120px;
-}
-
-.pt-100 {
-  padding-top: 100px;
-}
-
-.pb-120 {
-  padding-bottom: 120px;
+  margin-bottom: 37px;
 }
 
 /*
@@ -290,32 +270,18 @@ Global CSS END
 ============================
 */
 
+.main-wrappre {
+  position: relative;
+}
 
 /*
 ============================
 Header Section Start
 ============================
 */
-
-.transparent-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 9;
-}
-
-.main-header {
-	padding: 40px 0;
-}
-
-.header-cta a {
-	margin-left: 20px;
-}
-
-.header-cta a {
-  margin-left: 20px;
+.header-section {
+  padding-top: 45px;
+  padding-bottom: 20px;
 }
 
 .login-btn {
@@ -327,11 +293,6 @@ Header Section Start
 
 .login-btn:hover {
   border: 1px solid transparent;
-}
-
-.header-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .nav-toggle {
@@ -346,7 +307,7 @@ Header Section Start
 
 .nav-toggle::before,
 .nav-toggle::after,
-.nav-toggle span{
+.nav-toggle span {
   content: "";
   width: 100%;
   height: 2px;
@@ -366,7 +327,7 @@ Header Section Start
   bottom: 2px;
 }
 
-.nav-toggle span{
+.nav-toggle span {
   margin: 6px 0;
 }
 
@@ -391,7 +352,7 @@ Header Section Start
   display: none;
 }
 
-.header-inner .btn-wrap .site-btn + .site-btn{
+.header-inner .btn-wrap .site-btn + .site-btn {
   margin-left: 1.5rem;
 }
 
@@ -401,55 +362,134 @@ Header Section End
 ============================
 */
 
-
 /*
 ============================
 Banner Section Start
 ============================
 */
 
-.banner-bg {
-	background: radial-gradient(55.35% 55.35% at 50% 50%, rgba(108, 94, 139, 0.8) 0%, rgba(54, 30, 81, 0) 100%);
-	position: relative;
-	padding-top: 120px;
+.banner-area {
+  position: relative;
+  padding-top: 83px;
   padding-bottom: 50px;
 }
 
-.banner-bg:before {
+.banner-area::after {
+  content: "";
   position: absolute;
   left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  top: 48%;
+  bottom: -312px;
+  right: -226px;
+
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(-26.48%, #413657),
+    color-stop(51.43%, rgba(37, 35, 49, 0))
+  );
+  background: -o-linear-gradient(
+    top,
+    #413657 -26.48%,
+    rgba(37, 35, 49, 0) 51.43%
+  );
+  background: linear-gradient(
+    180deg,
+    #413657 -26.48%,
+    rgba(37, 35, 49, 0) 51.43%
+  );
+  mix-blend-mode: normal;
+  z-index: -2;
+  -webkit-clip-path: polygon(0 58%, 100% 0%, 100% 100%, 0 100%);
+  clip-path: polygon(0 58%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.banner-skew-vector {
   content: "";
+  position: absolute;
+  left: -59px;
+  right: -173px;
+  top: 28px;
+  bottom: 40px;
+  z-index: -1;
+  background-color: #252331;
+  -webkit-transform: skewX(-74deg);
+  -ms-transform: skewX(-74deg);
+  transform: skewX(-74deg);
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
+
+.top-radial {
+  /* width: 1945px; */
+  height: 1945px;
+  position: absolute;
+  left: 0;
+  right: -539px;
+  top: -521px;
+  background: -o-radial-gradient(
+    59.35% 39.35%,
+    48% 45%,
+    rgba(108, 94, 139, 0.8) 0%,
+    rgba(54, 30, 81, 0) 100%
+  );
+  background: radial-gradient(
+    48% 45% at 59.35% 39.35%,
+    rgba(108, 94, 139, 0.8) 0%,
+    rgba(54, 30, 81, 0) 100%
+  );
+  z-index: -4;
+  opacity: 0.7;
+}
+
+.top-ellipse-vector {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  width: 1372px;
+  height: 1563px;
   background-image: url(assets/images/banner-shade.png);
-  background-size: cover;
-  z-index: -9;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -3;
+  opacity: 0.5;
+}
+
+.banner-text {
+  max-width: 914px;
 }
 
 .banner-text h1 {
   color: var(--text-white);
-  font-size: 59px;
-  line-height: 63px;
-  font-weight: 700;
-  margin-bottom: 50px;
+  /* line-height: 63px; */
+  margin-bottom: 39px;
 }
 
 .banner-text p {
-  font-size: 16px;
-  line-height: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
-.site-btn.banner-btn {
+.banner-text .site-btn {
   background: var(--text-white);
-  color: var(--black);
-  font-size: 18px;
+  color: var(--secondary);
+  font-size: 1.125rem;
 }
 
-.banner-btn:hover {
+.banner-text .site-btn:hover {
   color: var(--text-white);
   background: var(--primary);
+}
+
+.dashboard-figure {
+  margin-top: 15px;
+  margin-left: -65px;
+  margin-right: -65px;
+}
+
+.brand-logo {
+  opacity: 0.5;
+  padding: 10px;
 }
 
 /*
@@ -458,39 +498,54 @@ Banner Section End
 ============================
 */
 
-
-
 /*
 ============================
 Features Section Start
 ============================
 */
 
+.product-features-area {
+  margin-top: 20px;
+}
+
+.feature-box-wrap {
+  flex-flow: row wrap;
+  gap: 1.625%;
+}
+
+.features-box {
+  background: linear-gradient(
+    180deg,
+    rgba(54, 52, 65, 0.5) 0%,
+    rgba(42, 41, 55, 0.5) 100%
+  );
+  border-radius: 10px;
+  padding: 40px 25px 25px;
+  transition: 0.3s all ease;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+.features-box:hover {
+  background: linear-gradient(
+    154.06deg,
+    rgba(83, 68, 103, 0.5) 5.56%,
+    rgba(42, 41, 55, 0.5) 82.89%
+  );
+}
+
 .features-icon {
   margin-bottom: 22px;
 }
 
-.features-box h3 {
+.features-box h5 {
   color: var(--text-white);
-  font-weight: 400;
   margin-bottom: 15px;
 }
 
 .features-box p {
-  color: var(--secondary);
+  color: var(--body-text-color);
   line-height: 24px;
-}
-
-.features-box {
-	background: linear-gradient(180deg, rgba(54, 52, 65, 0.5) 0%, rgba(42, 41, 55, 0.5) 100%);
-	border-radius: 10px;
-	padding: 35px 28px 35px;
-	margin-bottom: 25px;
-  transition: 0.3s all ease;
-}
-
-.features-box:hover {
-  background: linear-gradient(154.06deg, rgba(83, 68, 103, 0.5) 5.56%, rgba(42, 41, 55, 0.5) 82.89%);
 }
 
 /*
@@ -499,20 +554,32 @@ Features Section End
 ============================
 */
 
+.own-workflow-area {
+  margin-top: 50px;
+}
+
+.workflow-content-wrap .row {
+  margin-top: 50px;
+}
+
+.workflow-content {
+  margin-top: 30px;
+}
+
 /*
 ============================
 About Section Start
 ============================
 */
 
-.about-text h3 {
+.workflow-content h3 {
   font-size: 40px;
   color: var(--text-white);
   font-weight: normal;
   margin-bottom: 20px;
 }
 
-.about-text p {
+.workflow-content p {
   color: var(--secondary);
   line-height: 27px;
   font-size: 18px;
@@ -527,29 +594,48 @@ About Section Ends
 
 /*
 ============================
-Pricing Section Section
+Pricing Section start
 ============================
 */
+.pricing-area .section-title {
+  max-width: 566px;
+}
+
+.pricing-area .title {
+  margin-bottom: 24px;
+}
+
+.pricing-box-row {
+  background-image: url(assets/images/pricing-gradient-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-top: 25px;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.pricing-box-row > [class^="col-"],
+.pricing-box-row > [class*="col-"] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 .pricing-box {
   background: rgba(59, 55, 78, 0.5);
   border-radius: 23.0857px;
-  padding: 32px 35px;
+  padding: 27px 24px;
   transition: 0.3s all ease;
   border: 1px solid transparent;
 }
 
-.pricing-head h3 {
+.pricing-head h4:not(.title) {
   color: var(--text-white);
+  margin-bottom: 15px;
 }
 
 .pricing-head p {
   font-size: 18px;
-  color: #DFE1F4;
-}
-
-.check {
-  width: 22px;
-  height: 22px;
+  color: var(--text-light-gray);
 }
 
 .pricing-number {
@@ -561,33 +647,59 @@ Pricing Section Section
   margin-top: 8px;
 }
 
+.pricing-list {
+  margin-top: 25px;
+}
+
 .pricing-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  gap: 8px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
   font-size: 16px;
   line-height: 25px;
   border-top: 1.15429px solid rgba(255, 255, 255, 0.1);
-  padding-top: 10px;
-  margin-bottom: 10px;
+  padding: 11px 0;
+}
+
+.pricing-list li::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image: url(assets/images/pricing-list-check.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+  object-position: center;
+  display: inline-block;
 }
 
 .pricing-bottom {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .pricing-bottom p {
   font-size: 16px;
 }
 
-.pricing-bottom p a {
-  color: var(--primary);
+.pricing-bottom a:not(.site-btn) {
+  color: var(--text-light-gray);
   display: inline-block;
   margin-bottom: 6px;
+  text-decoration: underline;
+}
+
+.pricing-bottom a:not(.site-btn):hover {
+  text-decoration: none;
 }
 
 .pricing-bottom .site-btn {
   border: 1px solid var(--primary);
   background: transparent;
+  padding: 16px 36px;
 }
 
 .pricing-box:hover {
@@ -598,6 +710,16 @@ Pricing Section Section
 .pricing-box:hover .site-btn {
   color: var(--text-white);
   background: var(--primary);
+}
+
+.pricing-box:hover .pricing-bottom a:not(.site-btn) {
+  color: var(--primary);
+}
+
+.pricing-box:hover .site-btn:hover {
+  background-color: var(--text-white);
+  color: var(--secondary);
+  border-color: var(--text-white);
 }
 
 /*
@@ -612,23 +734,40 @@ Trial Section Start
 ============================
 */
 
-.trial-bg {
-  position: relative;
-  background: var(--primary);
-  padding-top: 60px;
-  padding-bottom: 50px;
-  background-image: url(assets/images/trail-transparent.png);
-  border-radius: 30px;
+.free-trial-area {
+  margin-top: 50px;
 }
 
-.free-trial-arae .sub-title {
+.free-trial-area .section-title {
+  max-width: 905px;
+}
+
+.free-trial-area .sub-title {
+  letter-spacing: 3px;
+}
+
+.free-trial-area .section-title h2 {
+  line-height: 1;
+}
+
+.trial-bg {
+  position: relative;
+  background-color: var(--primary);
+  padding: 80px 25px 65px;
+  background-image: url(assets/images/trail-transparent.png);
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.free-trial-area .sub-title {
   color: var(--text-white);
+  margin-bottom: 10px;
 }
 
 .bg-white {
-	color: var(--primary);
+  color: var(--primary);
 }
-
 
 /*
 ============================
@@ -643,10 +782,47 @@ Footer Section Start
 */
 
 .footer-wrapper {
-	background: #2D2D3C;
-	padding-top: 150px;
-	padding-bottom: 50px;
-	margin-top: -45px;
+  background: var(--footer-bg-color);
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin-top: -50px;
+}
+
+.social-links {
+  gap: 20px;
+}
+
+.social-links a {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
+}
+.social-links a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background: var(--social-link-bg-color);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.social-links a:hover:after {
+  opacity: 1;
 }
 
 /*
@@ -655,43 +831,161 @@ Footer Section End
 ============================
 */
 
-
 /* 
 =============================
     Responsive styles
 =============================
 */
 @media (max-width: 767px) {
-.header-section.expanded{
-   background-color: var(--body-bg-color);
-}
-.header-inner,
-.header-inner .btn-wrap{
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  .header-section.expanded {
+    background-color: var(--body-bg-color);
+  }
+  .header-inner,
+  .header-inner .btn-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+  .header-inner .btn-wrap {
+    width: 100%;
+    padding: 24px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    box-sizing: border-box;
+    z-index: 9;
+    background-color: var(--body-bg-color);
+    display: none;
+  }
+
+  .header-inner .btn-wrap .site-btn {
+    width: 100%;
+  }
+
+  .header-inner .btn-wrap .site-btn + .site-btn {
+    margin-left: 0;
+    margin-top: 2.3rem;
+  }
+
+  .footer-wrapper .container {
+    flex-flow: row wrap;
+    row-gap: 20px;
+  }
+  .footer-wrapper .container > * {
+    width: 100%;
+    text-align: center;
+  }
+  .fotter-logo img {
+    margin: 0 auto;
+  }
+  .social-links {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 
-.header-inner .btn-wrap{
-   width: 100%;
-   padding: 24px;
-   position: absolute;
-   left: 0;
-   top: 100px;
-   box-sizing: border-box;
-   z-index: 9;
-   background-color: var(--body-bg-color);
-   display: none;
+@media screen and (min-width: 660px) {
+  .features-box {
+    width: 48.25%;
+    margin-bottom: 1.625%;
+  }
 }
 
-.header-inner .btn-wrap .site-btn{
-   width: 100%;
+@media screen and (min-width: 1024px) {
+  .features-box {
+    width: 32.25%;
+  }
+
+  .own-workflow-area {
+    margin-top: 80px;
+  }
+  .free-trial-area {
+    margin-top: 80px;
+  }
+
+  .footer-wrapper {
+    padding-top: 100px;
+  }
 }
 
-.header-inner .btn-wrap .site-btn + .site-btn{
-   margin-left: 0;
-   margin-top: 2.3rem;
-}
+@media screen and (min-width: 1360px) {
+  .container {
+    max-width: 1230px;
+  }
+  .container-large {
+    max-width: 1340px;
+  }
 
+  .product-features-area {
+    margin-top: 80px;
+  }
+
+  .feature-box-wrap {
+    margin-top: 35px;
+  }
+
+  .features-box {
+    min-height: 313px;
+  }
+
+  .own-workflow-area {
+    margin-top: 138px;
+  }
+
+  .workflow-content-wrap .row {
+    margin-top: 95px;
+  }
+
+  .workflow-content-wrap .row:first-child {
+    margin-top: 77px;
+  }
+  .workflow-content {
+    margin-top: 60px;
+    max-width: 395px;
+  }
+
+  .workflow-content-wrap .row:first-child .workflow-content {
+    margin-top: 47px;
+  }
+  .pricing-area {
+    margin-top: 174px;
+  }
+
+  .pricing-area .container {
+    max-width: 1200px;
+  }
+
+  .pricing-area .section-title h2 {
+    margin-bottom: 25px;
+  }
+  .pricing-box-row {
+    margin-top: 43px;
+  }
+
+  .pricing-list {
+    margin-top: 45px;
+  }
+
+  .pricing-bottom {
+    margin-top: 42px;
+  }
+  .free-trial-area {
+    margin-top: 170px;
+  }
+
+  .free-trial-area .site-btn {
+    padding: 20px 54px;
+  }
+
+  .footer-wrapper {
+    padding-top: 143px;
+    padding-bottom: 50px;
+  }
+
+  .copyright-text {
+    font-size: 1.125rem;
+  }
 }
