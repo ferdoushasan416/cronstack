@@ -5,6 +5,7 @@
   --text-white: #fff;
   --text-light-gray: #dfe1f4;
   --btn-color: #f0f9f5;
+  --price-cent-color: #babcd2;
   --body-bg-color: #181820;
   --body-text-color: #9997aa;
   --social-link-bg-color: #8976fd;
@@ -15,11 +16,11 @@
 
 @font-face {
   font-family: "TT Firs Neue Trl";
-  src: url("assets/fonts/TTFirsNeueTrl-Regular.eot");
-  src: url("assets/fonts/TTFirsNeueTrl-Regular.eot?#iefix")
+  src: url("../fonts/TTFirsNeueTrl-Regular.eot");
+  src: url("../fonts/TTFirsNeueTrl-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("assets/fonts/TTFirsNeueTrl-Regular.woff2") format("woff2"),
-    url("assets/fonts/TTFirsNeueTrl-Regular.woff") format("woff");
+    url("../fonts/TTFirsNeueTrl-Regular.woff2") format("woff2"),
+    url("../fonts/TTFirsNeueTrl-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,11 +28,11 @@
 
 @font-face {
   font-family: "TT Firs Neue Trl";
-  src: url("assets/fonts/TTFirsNeueTrl-Medium.eot");
-  src: url("assets/fonts/TTFirsNeueTrl-Medium.eot?#iefix")
+  src: url("../fonts/TTFirsNeueTrl-Medium.eot");
+  src: url("../fonts/TTFirsNeueTrl-Medium.eot?#iefix")
       format("embedded-opentype"),
-    url("assets/fonts/TTFirsNeueTrl-Medium.woff2") format("woff2"),
-    url("assets/fonts/TTFirsNeueTrl-Medium.woff") format("woff");
+    url("../fonts/TTFirsNeueTrl-Medium.woff2") format("woff2"),
+    url("../fonts/TTFirsNeueTrl-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -39,11 +40,11 @@
 
 @font-face {
   font-family: "TT Firs Neue Trl";
-  src: url("assets/fonts/TTFirsNeueTrl-DemiBold.eot");
-  src: url("assets/fonts/TTFirsNeueTrl-DemiBold.eot?#iefix")
+  src: url("../fonts/TTFirsNeueTrl-DemiBold.eot");
+  src: url("../fonts/TTFirsNeueTrl-DemiBold.eot?#iefix")
       format("embedded-opentype"),
-    url("assets/fonts/TTFirsNeueTrl-DemiBold.woff2") format("woff2"),
-    url("assets/fonts/TTFirsNeueTrl-DemiBold.woff") format("woff");
+    url("../fonts/TTFirsNeueTrl-DemiBold.woff2") format("woff2"),
+    url("../fonts/TTFirsNeueTrl-DemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -51,11 +52,10 @@
 
 @font-face {
   font-family: "TT Firs Neue Trl";
-  src: url("assets/fonts/TTFirsNeueTrl-Bold.eot");
-  src: url("assets/fonts/TTFirsNeueTrl-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("assets/fonts/TTFirsNeueTrl-Bold.woff2") format("woff2"),
-    url("assets/fonts/TTFirsNeueTrl-Bold.woff") format("woff");
+  src: url("../fonts/TTFirsNeueTrl-Bold.eot");
+  src: url("../fonts/TTFirsNeueTrl-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTFirsNeueTrl-Bold.woff2") format("woff2"),
+    url("../fonts/TTFirsNeueTrl-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -82,6 +82,7 @@ html,
 body {
   height: 100%;
   min-width: 320px;
+  scroll-behavior: smooth;
 }
 /* 
 body{
@@ -124,7 +125,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "TT Firs Neue Trl", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-weight: 500;
@@ -203,7 +203,6 @@ ul {
   cursor: pointer;
   display: inline-block;
   font-size: 17px;
-  font-family: "TT Firs Neue Trl", sans-serif;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 0;
@@ -232,7 +231,7 @@ ul {
   width: 100%;
   height: 116%;
   content: "";
-  background-image: url(assets/images/Vector.png);
+  background-image: url(../images/Vector.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   left: 0;
@@ -240,7 +239,7 @@ ul {
 }
 
 .shade-2::after {
-  background-image: url(assets/images/title-vector.svg);
+  background-image: url(../images/title-vector.svg);
 }
 
 .sub-title {
@@ -253,8 +252,16 @@ ul {
   margin-bottom: 20px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .section-title,
-.copyright-text {
+.copyright-text,
+.pricing-head,
+.site-btn {
   font-family: "TT Firs Neue Trl", sans-serif;
 }
 
@@ -280,7 +287,7 @@ Header Section Start
 ============================
 */
 .header-section {
-  padding-top: 45px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -303,6 +310,13 @@ Header Section Start
   border: 0;
   padding: 0;
   margin-left: auto;
+  outline: none;
+}
+
+.nav-toggle:focus,
+.nav-toggle:active {
+  outline: none;
+  box-shadow: none;
 }
 
 .nav-toggle::before,
@@ -320,6 +334,9 @@ Header Section Start
   position: absolute;
   left: 0;
   top: 2px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .nav-toggle::after {
@@ -338,9 +355,6 @@ Header Section Start
   -webkit-transform: translateY(-50%) rotate(45deg);
   -ms-transform: translateY(-50%) rotate(45deg);
   transform: translateY(-50%) rotate(45deg);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 .expanded .nav-toggle::after {
   -webkit-transform: translateY(-50%) rotate(-45deg);
@@ -352,6 +366,10 @@ Header Section Start
   display: none;
 }
 
+.header-inner .btn-wrap {
+  transition: height 0.35s ease-in-out;
+  overflow: hidden;
+}
 .header-inner .btn-wrap .site-btn + .site-btn {
   margin-left: 1.5rem;
 }
@@ -370,7 +388,7 @@ Banner Section Start
 
 .banner-area {
   position: relative;
-  padding-top: 83px;
+  padding-top: 40px;
   padding-bottom: 50px;
 }
 
@@ -449,7 +467,7 @@ Banner Section Start
   right: 0;
   width: 1372px;
   height: 1563px;
-  background-image: url(assets/images/banner-shade.png);
+  background-image: url(../images/banner-shade.png);
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -3;
@@ -483,8 +501,6 @@ Banner Section Start
 
 .dashboard-figure {
   margin-top: 15px;
-  margin-left: -65px;
-  margin-right: -65px;
 }
 
 .brand-logo {
@@ -514,24 +530,45 @@ Features Section Start
 }
 
 .features-box {
+  border-radius: 10px;
+  padding: 40px 25px 25px;
+  margin-bottom: 3%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.features-box::before,
+.features-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     180deg,
     rgba(54, 52, 65, 0.5) 0%,
     rgba(42, 41, 55, 0.5) 100%
   );
-  border-radius: 10px;
-  padding: 40px 25px 25px;
-  transition: 0.3s all ease;
-  margin-bottom: 3%;
-  width: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: -2;
 }
 
-.features-box:hover {
+.features-box::after {
   background: linear-gradient(
     154.06deg,
     rgba(83, 68, 103, 0.5) 5.56%,
     rgba(42, 41, 55, 0.5) 82.89%
   );
+  z-index: -1;
+  opacity: 0;
+}
+
+.features-box:hover::after {
+  opacity: 1;
 }
 
 .features-icon {
@@ -597,6 +634,11 @@ About Section Ends
 Pricing Section start
 ============================
 */
+
+.pricing-area {
+  margin-top: 55px;
+}
+
 .pricing-area .section-title {
   max-width: 566px;
 }
@@ -606,7 +648,7 @@ Pricing Section start
 }
 
 .pricing-box-row {
-  background-image: url(assets/images/pricing-gradient-bg.png);
+  background-image: url(../images/pricing-gradient-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -634,13 +676,22 @@ Pricing Section start
 }
 
 .pricing-head p {
-  font-size: 18px;
+  font-size: 1.0625rem;
   color: var(--text-light-gray);
 }
 
 .pricing-number {
   display: flex;
   gap: 10px;
+}
+
+.pricing-number h4 {
+  font-weight: normal;
+}
+
+.pricing-number h4 sub {
+  font-size: 1.125rem;
+  color: var(--price-cent-color);
 }
 
 .pricing-number p {
@@ -669,7 +720,7 @@ Pricing Section start
   content: "";
   width: 19px;
   height: 19px;
-  background-image: url(assets/images/pricing-list-check.png);
+  background-image: url(../images/pricing-list-check.png);
   background-repeat: no-repeat;
   background-size: contain;
   object-fit: cover;
@@ -754,7 +805,7 @@ Trial Section Start
   position: relative;
   background-color: var(--primary);
   padding: 80px 25px 65px;
-  background-image: url(assets/images/trail-transparent.png);
+  background-image: url(../images/trail-transparent.png);
   border-radius: 30px;
   background-repeat: no-repeat;
   background-position: center top;
@@ -783,7 +834,7 @@ Footer Section Start
 
 .footer-wrapper {
   background: var(--footer-bg-color);
-  padding-top: 50px;
+  padding-top: 90px;
   padding-bottom: 40px;
   margin-top: -50px;
 }
@@ -819,6 +870,9 @@ Footer Section Start
   background: var(--social-link-bg-color);
   opacity: 0.2;
   z-index: -1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .social-links a:hover:after {
@@ -837,8 +891,10 @@ Footer Section End
 =============================
 */
 @media (max-width: 767px) {
-  .header-section.expanded {
-    background-color: var(--body-bg-color);
+  .site-logo,
+  .nav-toggle {
+    position: relative;
+    z-index: 2;
   }
   .header-inner,
   .header-inner .btn-wrap {
@@ -850,14 +906,18 @@ Footer Section End
 
   .header-inner .btn-wrap {
     width: 100%;
-    padding: 24px;
     position: absolute;
     left: 0;
-    top: 100px;
+    top: 0px;
     box-sizing: border-box;
-    z-index: 9;
+    z-index: 1;
     background-color: var(--body-bg-color);
-    display: none;
+    height: 0;
+  }
+
+  .header-inner #btn-wrap-inner {
+    padding-top: 120px;
+    padding-bottom: 50px;
   }
 
   .header-inner .btn-wrap .site-btn {
@@ -907,7 +967,7 @@ Footer Section End
   }
 
   .footer-wrapper {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 }
 
@@ -917,6 +977,19 @@ Footer Section End
   }
   .container-large {
     max-width: 1340px;
+  }
+
+  .header-section {
+    padding-top: 45px;
+  }
+
+  .banner-area {
+    padding-top: 83px;
+  }
+
+  .dashboard-figure {
+    margin-left: -65px;
+    margin-right: -65px;
   }
 
   .product-features-area {
